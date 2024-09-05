@@ -1,14 +1,16 @@
 cmake_minimum_required(VERSION 3.15)
 
-# Because the toolchain file is evaluated during the project() call,
-# all CMake-level variables that modify a vcpkg setting must be set before the first call to project()
+# -----------------------------------------------------------
+# Because the toolchain file is evaluated during the project()
+# call, all CMake-level variables that modify a vcpkg setting
+# must be set before the first call to project()
+# -----------------------------------------------------------
 set(VCPKG_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg") # vcpkg root directory
 set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake") # Link vcpkg with CMake
 
 # -----------------------------------------------------------
 # Project / Version
 # -----------------------------------------------------------
-set(MAIN_APP_NAME "MyApp")
 set(VERSION_PROJECT_MAJOR 0)
 set(VERSION_PROJECT_MINOR 1)
 set(VERSION_PROJECT_PATCH 0)
