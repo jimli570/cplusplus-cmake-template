@@ -39,7 +39,7 @@ This template serves as an excellent starting point for projects requiring a cle
 Commands are supposed to be run from the root directory of project.
 
 1. Follow the instructions in external libraries
-2. Geneate projectfiles
+2. Generate projectfiles
 
 ### External libraries
 
