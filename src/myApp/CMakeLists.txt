@@ -11,10 +11,10 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/myAppVersion.hpp.in ${CMAKE_CURRENT_S
 # -----------------------------------------------------------
 # Add source & header files
 # -----------------------------------------------------------
-SET(APP_SOURCES
+SET(SOURCE_FILES
   ${SRC_DIR}/main.cpp
 )
-SET(APP_HEADERS
+SET(HEADER_FILES
   ${INC_DIR}/main.hpp
 )
 
@@ -57,7 +57,9 @@ target_include_directories(${MAIN_APP_NAME}
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/engine>
 )
 
-target_sources(${MAIN_APP_NAME} PRIVATE ${APP_SOURCES} PRIVATE ${APP_HEADERS})
+target_sources(${MAIN_APP_NAME}
+  PRIVATE ${SOURCE_FILES}
+  PRIVATE ${HEADER_FILES})
 
 # -----------------------------------------------------------
 # External libraries

@@ -11,10 +11,10 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/myLibraryVersion.hpp.in ${INC_DIR}/ve
 # -----------------------------------------------------------
 # Add source & header files
 # -----------------------------------------------------------
-SET(MYLIBRARY_SOURCES
+SET(SOURCE_FILES
   ${SRC_DIR}/myLibrary.cpp
 )
-SET(MYLIBRARY_HEADERS
+SET(HEADER_FILES
   ${INC_DIR}/myLibrary.hpp
 )
 
@@ -60,7 +60,10 @@ target_include_directories(${MY_LIBRARY_NAME}
   # $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/include>
 )
 
-target_sources(${MY_LIBRARY_NAME} PRIVATE ${MYLIBRARY_SOURCES} PRIVATE ${MYLIBRARY_HEADERS})
+target_sources(${MY_LIBRARY_NAME}
+  PRIVATE ${SOURCE_FILES}
+  PRIVATE ${HEADER_FILES}
+)
 
 # -----------------------------------------------------------
 # External libraries
