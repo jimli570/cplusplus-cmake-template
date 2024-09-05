@@ -1,0 +1,9 @@
+{
+    "builtin-baseline": "91d888703f251c13111c1b889be1f350c4ceb7ab",
+    "dependencies": [
+        {
+            "name": "glm",
+            "version>=": "1.0.1"
+        }
+    ]
+}

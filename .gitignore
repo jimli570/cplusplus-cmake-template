@@ -1,0 +1,6 @@
+vcpkg/
+.vs/
+out/
+build/
+.vscode/
+.vscodeCounter/

@@ -1,0 +1,13 @@
+#pragma once
+
+#include <string_view>
+
+namespace myapp::version {
+
+constexpr std::string_view VERSION_FULL{ "@VERSION_MYAPP_FULL@" };
+constexpr int VERSION_MAJOR { @VERSION_MYAPP_MAJOR@ };
+constexpr int VERSION_MINOR { @VERSION_MYAPP_MINOR@ };
+constexpr int VERSION_PATCH { @VERSION_MYAPP_PATCH@ };
+constexpr int VERSION_TWEAK { @VERSION_MYAPP_TWEAK@ };
+
+}  // namespace engine::version
