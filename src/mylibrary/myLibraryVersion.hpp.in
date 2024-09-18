@@ -10,4 +10,4 @@ constexpr int VERSION_MINOR { @VERSION_MYLIBRARY_MINOR@ };
 constexpr int VERSION_PATCH { @VERSION_MYLIBRARY_PATCH@ };
 constexpr int VERSION_TWEAK { @VERSION_MYLIBRARY_TWEAK@ };
 
-}  // namespace engine::version
+}  // namespace mylibrary::version

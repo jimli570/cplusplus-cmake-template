@@ -10,4 +10,4 @@ constexpr int VERSION_MINOR { @VERSION_MYAPP_MINOR@ };
 constexpr int VERSION_PATCH { @VERSION_MYAPP_PATCH@ };
 constexpr int VERSION_TWEAK { @VERSION_MYAPP_TWEAK@ };
 
-}  // namespace engine::version
+}  // namespace myapp::version

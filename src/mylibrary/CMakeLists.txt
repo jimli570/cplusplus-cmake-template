@@ -34,7 +34,7 @@ target_compile_options(${MY_LIBRARY_NAME}
 
 # Set some compile definitions depending on the build type
 target_compile_definitions(
-  ${MAIN_APP_NAME}
+  ${MY_LIBRARY_NAME}
 
   PRIVATE
   GLM_ENABLE_EXPERIMENTAL
